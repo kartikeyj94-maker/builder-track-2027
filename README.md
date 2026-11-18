@@ -9,7 +9,7 @@ My first four programs:
 - **unit_converter.py** — Converts Celsius to Fahrenheit.
 - **string_cleaner.py** — Cleans company names.
 
-- ## Week 2 — Python CSV & RevOps Automation
+## Week 2 — Python CSV & RevOps Automation
 
 Built my first working CSV lead-cleaning pipeline using Python.
 
