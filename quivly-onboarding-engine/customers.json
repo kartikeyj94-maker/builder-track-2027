@@ -1,0 +1,29 @@
+
+[
+  {
+      "company": "Acme Technologies",
+      "owner": "Kartikey Jain",
+      "requirements": [
+          {"task": "Connect CRM", "status": "Completed"},
+          {"task": "Import customer data", "status": "Completed"},
+          {"task": "Configure health scoring", "status": "Completed"},
+          {"task": "Train customer success team", "status": "Pending"}
+      ]
+  },
+  {
+      "company": "Nova Health",
+      "owner": "Kartikey Jain",
+      "requirements": [
+          {"task": "Connect CRM", "status": "Completed"},
+          {"task": "Import customer data", "status": "Pending"}
+      ]
+  },
+  {
+      "company": "Orbit AI",
+      "owner": "Kartikey Jain",
+      "requirements": [
+          {"task": "Connect CRM", "status": "Completed"},
+          {"task": "Import customer data", "status": "Completed"}
+      ]
+  }
+]
