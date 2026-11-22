@@ -1,0 +1,23 @@
+[
+    {
+        "company": "Acme Technologies",
+        "owner": "Kartikey Jain",
+        "progress": 75.0,
+        "health": "On track",
+        "remaining_tasks": 1
+    },
+    {
+        "company": "Nova Health",
+        "owner": "Kartikey Jain",
+        "progress": 50.0,
+        "health": "Needs attention",
+        "remaining_tasks": 1
+    },
+    {
+        "company": "Orbit AI",
+        "owner": "Kartikey Jain",
+        "progress": 100.0,
+        "health": "Fully onboarded",
+        "remaining_tasks": 0
+    }
+]
