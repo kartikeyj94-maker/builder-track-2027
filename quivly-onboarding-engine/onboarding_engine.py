@@ -3,6 +3,8 @@ import json
 def calculate_progress(completed, total):
     if total == 0:
         return 0
+        completed_count
+        total_tasks
 
     return (completed / total) * 100
 
