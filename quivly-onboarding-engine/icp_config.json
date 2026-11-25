@@ -1,0 +1,21 @@
+
+{
+    "company_size": {
+      "min_employees": 50,
+      "max_employees": 500,
+      "points": 30
+    },
+    "industry": {
+      "target": "B2B SaaS",
+      "points": 30
+    },
+    "geography": {
+      "target": "United States",
+      "points": 20
+    },
+    "buying_signal": {
+      "hiring_support": true,
+      "points": 20
+    }
+  }
+  

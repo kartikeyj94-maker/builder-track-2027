@@ -1,38 +1,46 @@
 
-# WEEK 3 - DAY 3
+
+import json
+from pathlib import Path
+
+config_path = Path(__file__).with_name("icp_config.json")
+
+with open(config_path, "r") as file:
+    CONFIG = json.load(file)# WEEK 3 - DAY 3
 # Python ICP Lead Scoring Engine
 
-
 # 1. Score company size (maximum 30 points)
+
 def score_company_size(employees):
-    if 50 <= employees <= 500:
-        return 30
-    else:
-        return 0
+    rules = CONFIG["company_size"]
+
+    if rules["min_employees"] <= employees <= rules["max_employees"]:
+        return rules["points"]
+    return 0
 
 
-# 2. Score industry (maximum 30 points)
 def score_industry(industry):
-    if industry == "B2B SaaS":
-        return 30
-    else:
-        return 0
+    rules = CONFIG["industry"]
+
+    if industry == rules["target"]:
+        return rules["points"]
+    return 0
 
 
-# 3. Score geography (maximum 20 points)
 def score_geography(country):
-    if country == "United States":
-        return 20
-    else:
-        return 0
+    rules = CONFIG["geography"]
+
+    if country == rules["target"]:
+        return rules["points"]
+    return 0
 
 
-# 4. Score buying signals (maximum 20 points)
 def score_buying_signal(hiring_support):
-    if hiring_support:
-        return 20
-    else:
-        return 0
+    rules = CONFIG["buying_signal"]
+
+    if hiring_support == rules["hiring_support"]:
+        return rules["points"]
+    return 0
 
 # 5. Calculate total ICP score
 def calculate_icp_score(employees, industry, country, hiring_support):
