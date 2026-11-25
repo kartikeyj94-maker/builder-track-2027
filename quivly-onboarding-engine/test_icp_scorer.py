@@ -37,7 +37,7 @@ def test_perfect_icp_match():
     score = calculate_icp_score(
         120, "B2B SaaS", "United States", True
     )
-    assert score == 999
+    assert score == 100
 
 def test_no_icp_match():
     score = calculate_icp_score(
